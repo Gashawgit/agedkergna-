@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website Interaction</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 100px;
+            font-family: Arial, sans-serif;
+        }
+
+        #message {
+            font-size: 24px;
+            color: darkblue;
+        }
+
+        button {
+            background-color: lightblue;
+            padding: 10px 20px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="message">Hello, Tomas!</h1>
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+        function changeText() {
+            // Step 1: Get the element
+            let message = document.getElementById("message");
+
+            // Step 2: Change the text
+            message.style.color = "green";
+            message.innerHTML = "You clicked the button! 🎉";
+
+            // Step 3: Change the color
+
+        }
+    </script>
+</body>
+
+</html>
